@@ -1,0 +1,289 @@
+/* Reset CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a,
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+/* ---------------------------------Header---------------------------------------- */
+.header {
+  height: 45px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav li {
+  position: relative;
+}
+
+.nav > li {
+  display: block;
+}
+
+.nav > li > a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.nav li a {
+  text-decoration: none;
+  line-height: 45px;
+  padding: 0 24px;
+  display: inline-block;
+  position: relative;
+}
+.nav li:hover > a,
+.nav li:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+.nav li:hover .navsub {
+  display: block;
+  z-index: 99;
+}
+
+.nav .navsub {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+}
+
+.nav .navsub a {
+  color: #000;
+  padding: 0 12px;
+  line-height: 38px;
+}
+
+.nav .nav-arrow-dow {
+  font-size: 14px;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header .search-icon {
+  font-size: 14px;
+  line-height: 45px;
+  min-width: 62px;
+  color: white;
+}
+
+.search-icon {
+  font-weight: 600;
+}
+
+.header .search-btn :hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------Slider-------------------------------------------- */
+
+.slider {
+  z-index: -99;
+  position: relative;
+  margin-top: 45px;
+  padding-top: 50%;
+  background: url("/assets/img/img1.jpg") top center / cover no-repeat;
+}
+
+.slider--content {
+  position: absolute;
+  bottom: 47px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+.slider--header {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 24px;
+}
+.slider--des {
+  font-size: 15px;
+}
+
+/* --------------------------------Content--------------------------------------- */
+
+.content--section {
+  width: 800px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+.section--heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+.section--sub-heading {
+  text-align: center;
+  opacity: 0.6;
+  font-style: italic;
+  font-size: 15px;
+  margin-top: 25px;
+}
+.about-text {
+  margin-top: 25px;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+/* -------------------------------Member------------------------ */
+
+.member-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  padding: 32px;
+}
+
+.member-item {
+  margin-right: 5px;
+}
+.member-name {
+  margin: 15px;
+  font-size: 16px;
+}
+.member-avt {
+  width: 154px;
+  border-radius: 4px;
+}
+
+/* -------------------------------------Tour section------------------------------------ */
+
+.tour--section {
+  background-color: #000;
+}
+
+.tickets-list {
+  background-color: #fff;
+  margin-top: 40px;
+}
+
+.tickets-list li {
+  font-size: 15px;
+  padding: 13px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.soul-out {
+  font-size: 15px;
+  background-color: #f44336;
+  color: white;
+  padding: 1px 4px;
+  margin-left: 12px;
+}
+.quantity {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -4px;
+}
+
+/*------------------------ Places------------------------ */
+
+.place-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 48px 8px;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.place-item {
+  padding: 0 8px;
+}
+
+.place-img {
+  width: 100%;
+  display: block;
+}
+
+.place-img:hover {
+  opacity: 0.6;
+}
+.place-body {
+  background-color: #fff;
+  padding: 16px;
+  font-size: 15px;
+}
+.place-heading {
+  font-size: 15px;
+  font-weight: 600;
+}
+.place-time {
+  margin-top: 15px;
+  color: #757575;
+}
+.place-des {
+  margin-top: 15px;
+  line-height: 1.4;
+}
+.place-buy-btn {
+  color: #fff;
+  background-color: #000;
+  padding: 13px 18px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.place-buy-btn:hover {
+  background-color: #ccc;
+  color: #333;
+  cursor: pointer;
+}
+
+.footer {
+}
