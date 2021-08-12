@@ -1,0 +1,71 @@
+@media (min-width: 1024px) {
+  i.btn-menu.search-icon.ti-menu {
+    display: none;
+  }
+}
+/* IPad */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  i.btn-menu.search-icon.ti-menu {
+    display: none;
+  }
+}
+/* --------Mobile----------- */ /* */
+@media (max-width: 767px) {
+  .header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    height: 45px;
+  }
+
+  .slider--content {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .header .search-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  i.btn.search-icon.ti-search {
+    display: none;
+  }
+
+  .member-list {
+    flex-direction: column;
+  }
+
+  .place-list {
+    flex-direction: column;
+  }
+  .place-item {
+    padding: 10px 8px;
+  }
+
+  .member-avt {
+    width: 80%;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .form {
+    margin-top: 16px;
+    flex-direction: column;
+  }
+}
