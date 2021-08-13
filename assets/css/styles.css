@@ -127,7 +127,7 @@ body {
   position: relative;
   margin-top: 45px;
   padding-top: 50%;
-  background: url("/assets/img/img1.jpg") top center / cover no-repeat;
+  background: url("../img/img1.jpg") top center / cover no-repeat;
 }
 
 .slider--content {

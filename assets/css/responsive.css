@@ -9,6 +9,13 @@
   i.btn-menu.search-icon.ti-menu {
     display: none;
   }
+
+  .modal-container {
+    width: 500px;
+    position: fixed;
+    max-width: calc(100% - 32px);
+    top: 65px;
+  }
 }
 /* --------Mobile----------- */ /* */
 @media (max-width: 767px) {
@@ -67,5 +74,9 @@
   .form {
     margin-top: 16px;
     flex-direction: column;
+  }
+
+  .modal-container {
+    max-width: calc(100% - 20px);
   }
 }
