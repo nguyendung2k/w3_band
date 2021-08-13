@@ -123,11 +123,15 @@ body {
 /* ---------------------------------------------Slider-------------------------------------------- */
 
 .slider {
-  z-index: -99;
   position: relative;
+  top: 0;
   margin-top: 45px;
   padding-top: 50%;
-  background: url("../img/img1.jpg") top center / cover no-repeat;
+  /* background: url("../img/img1.jpg") top center / cover no-repeat; */
+  background-image: url("../img/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .slider--content {
