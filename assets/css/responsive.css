@@ -29,18 +29,27 @@
   }
 
   .nav {
-    display: flex;
+    display: block;
     flex-direction: column;
     height: 45px;
+  }
+
+  .header ul,
+  a {
+    width: 100%;
+  }
+
+  .header ul :nth-child(1) {
+    width: 85%;
   }
 
   .slider--content {
     display: none;
   }
 
-  .nav {
+  /* .nav {
     display: block;
-  }
+  } */
 
   .header .search-icon {
     position: absolute;

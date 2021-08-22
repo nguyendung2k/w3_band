@@ -116,8 +116,7 @@ body {
 }
 
 .search-btn .ti-menu:hover {
-  color: red;
-  cursor: pointer;
+  background-color: #ccc;
 }
 
 /* ---------------------------------------------Slider-------------------------------------------- */
