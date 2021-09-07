@@ -90,7 +90,7 @@
   .modal-container {
     max-width: calc(100% - 20px);
   }
-  input.form-control.name {
+  .form-control.name {
     margin-bottom: 18px;
   }
 }
