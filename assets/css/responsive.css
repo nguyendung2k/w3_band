@@ -42,7 +42,7 @@
   }
 
   .header ul :nth-child(1) {
-    width: 92%;
+    max-width: calc(100% - 62px);
   }
 
   .slider--content {
