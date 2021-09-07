@@ -1,20 +1,22 @@
 @media (min-width: 1024px) {
-  i.btn-menu.search-icon.ti-menu {
+  .btn-menu.search-icon.ti-menu {
     display: none;
   }
 }
 /* IPad */
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  i.btn-menu.search-icon.ti-menu {
-    display: none;
-  }
-
   .modal-container {
     width: 500px;
     position: fixed;
     max-width: calc(100% - 32px);
     top: 65px;
+  }
+}
+
+@media (min-width: 767px) {
+  i#mobile-menu {
+    display: none;
   }
 }
 /* --------Mobile----------- */ /* */
@@ -40,7 +42,7 @@
   }
 
   .header ul :nth-child(1) {
-    width: 85%;
+    width: 92%;
   }
 
   .slider--content {
@@ -87,5 +89,8 @@
 
   .modal-container {
     max-width: calc(100% - 20px);
+  }
+  input.form-control.name {
+    margin-bottom: 18px;
   }
 }
