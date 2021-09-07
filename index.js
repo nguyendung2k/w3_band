@@ -57,11 +57,20 @@ const buyBtns = document.querySelectorAll('.js-buy-tickets');
 
         for(var i = 0; i< menuItems.length; i++){
             var menuItem = menuItems[i];
+            
 
 
-          menuItem.onclick= function(){
-              header.style.height = null;
-              nav.style.height = null;
+          menuItem.onclick = function(event){
+            var isParentMenu =  this.nextElementSibling && this.nextElementSibling.classList.contains('navsub')
+            if(isParentMenu){
+                 event.preventDefault();  
+                
+            }else{
+                header.style.height = null;
+                nav.style.height = null;
+            }
+
+             
           }
         }      
   

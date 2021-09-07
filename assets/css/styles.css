@@ -144,9 +144,11 @@ body {
   margin-bottom: 30px;
   font-weight: 500;
   font-size: 24px;
+  text-shadow: 0 0 2px #000;
 }
 .slider--des {
   font-size: 15px;
+  text-shadow: 0 0 2px #000;
 }
 
 /* --------------------------------Content--------------------------------------- */
@@ -409,6 +411,15 @@ body {
 }
 .contact-des {
   line-height: 1.6;
+}
+
+.contact-des a {
+  color: #101aef;
+  opacity: 0.8;
+}
+
+.contact-des a:hover {
+  opacity: 1;
 }
 
 .icons {
